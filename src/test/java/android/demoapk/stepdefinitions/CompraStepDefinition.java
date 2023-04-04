@@ -2,7 +2,6 @@ package android.demoapk.stepdefinitions;
 
 import android.demoapk.driver.IOSDriver;
 import android.demoapk.questions.MensajeCompraExitosa;
-import android.demoapk.questions.MensajeInicioSesion;
 import android.demoapk.setup.SetUp;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
