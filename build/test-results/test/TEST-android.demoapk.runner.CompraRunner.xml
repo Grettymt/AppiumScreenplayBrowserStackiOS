@@ -4,7 +4,7 @@
   <system-out><![CDATA[
 1 Scenarios (?[32m1 passed?[0m)
 3 Steps (?[32m3 passed?[0m)
-2m20,438s
+3m16,667s
 
 
 ]]></system-out>
@@ -28,8 +28,8 @@
 [Test worker] INFO  - Test Suite Started: Compra
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/nunez/Escritorio/Automatizacion%20cloud/Automatizacion%20Demo%20APP%20IOS/AppiumScreenplayBrowserStackiOS/src/test/resources/features/login.feature
 [Test worker] INFO  - Test Suite Started: Login saucelabs app
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@244722: Generating report for test outcome: Compra:Realizar una compra
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@ce79fe: Generating report for test outcome: Compra:Realizar una compra
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@11fb828: Generating report for test outcome: Compra:Realizar una compra
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1313c8c: Generating report for test outcome: Compra:Realizar una compra
 log4j:WARN No appenders could be found for logger (freemarker.cache).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.

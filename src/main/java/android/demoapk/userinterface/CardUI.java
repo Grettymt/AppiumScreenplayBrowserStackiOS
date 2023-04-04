@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class CardUI {
 
-    public static final Target CAMPO_NAME = Target.the("Campo nombre propietario tarjeta")
+    public static final Target CAMPO_NAME_CARD = Target.the("Campo nombre propietario tarjeta")
             .located(MobileBy.AccessibilityId("Full Name* input field"));
 
     public static final Target CAMPO_NUMERO_CARD = Target.the("Campo numero de tarjeta")
@@ -19,10 +19,4 @@ public class CardUI {
 
     public static final Target BTN_VER_DETALLES = Target.the("Boton ver detalles de compra")
             .located(MobileBy.AccessibilityId("Review Order button"));
-
-
-
-/*
-1234567891023456
- */
 }
