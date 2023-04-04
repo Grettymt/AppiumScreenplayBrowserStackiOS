@@ -20,4 +20,20 @@ public class HomeUI {
 
     public static final Target OPCION_CATALOGO = Target.the("Opcion de catalogo")
             .located(MobileBy.AccessibilityId("tab bar option catalog"));
+
+    public static final Target MENSAJE_LOGIN = Target.the("Mensaje de login")
+            .located(By.xpath("//XCUIElementTypeStaticText[@name='Products']"));
+
+    /*
+    *
+    *
+    * Add To Cart button
+    *
+    *
+    * tab bar option cart
+    *
+    *
+    *
+    * Proceed To Checkout button
+    * */
 }
