@@ -17,4 +17,7 @@ public class HomeUI {
 
     public static final Target BTN_FINISH_LOGOUT = Target.the("Boton finalizar LogOut")
             .located(MobileBy.AccessibilityId("OK"));
+
+    public static final Target OPCION_CATALOGO = Target.the("Opcion de catalogo")
+            .located(MobileBy.AccessibilityId("tab bar option catalog"));
 }

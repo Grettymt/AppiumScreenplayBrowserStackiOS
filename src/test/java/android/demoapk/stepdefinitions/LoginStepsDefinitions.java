@@ -10,6 +10,7 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import org.openqa.selenium.JavascriptExecutor;
 
 import static android.demoapk.tasks.LogOut.logOut;
+import static android.demoapk.tasks.Login.login;
 
 
 public class LoginStepsDefinitions extends SetUp {
@@ -25,7 +26,10 @@ public class LoginStepsDefinitions extends SetUp {
     @When("User introduce the valid credentials {string} {string}")
     public void userIntroduceTheValidCredentials(String userName, String password) {
         actor.attemptsTo(
-                logOut()
+                logOut(),
+                login()
+                        .conElUser(userName)
+                        .yLaPassword(password)
         );
     }
     @Then("User should see the Products list")

@@ -4,7 +4,7 @@
   <system-out><![CDATA[
 1 Scenarios (?[32m1 passed?[0m)
 3 Steps (?[32m3 passed?[0m)
-1m12,926s
+1m23,722s
 
 
 ]]></system-out>
@@ -26,8 +26,8 @@
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Login saucelabs app
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@8bdd72: Generating report for test outcome: Login saucelabs app:Login with valid credentials
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@196b249: Generating report for test outcome: Login saucelabs app:Login with valid credentials
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@13f156: Generating report for test outcome: Login saucelabs app:Login with valid credentials
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@e90da5: Generating report for test outcome: Login saucelabs app:Login with valid credentials
 log4j:WARN No appenders could be found for logger (freemarker.cache).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.

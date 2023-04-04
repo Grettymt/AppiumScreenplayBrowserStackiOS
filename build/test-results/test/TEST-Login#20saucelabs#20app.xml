@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Login saucelabs app" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-04T17:51:38" hostname="JOSENUÑEZ" time="72.587">
+<testsuite name="Login saucelabs app" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-04T18:17:31" hostname="JOSENUÑEZ" time="83.322">
   <properties/>
-  <testcase name="Login with valid credentials" classname="Login saucelabs app" time="72.587"/>
+  <testcase name="Login with valid credentials" classname="Login saucelabs app" time="83.322"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/nunez/Escritorio/Automatizacion%20cloud/Automatizacion%20Demo%20APP%20IOS/AppiumScreenplayBrowserStackiOS/src/test/resources/features/login.feature
 [Test worker] INFO  - 
@@ -14,7 +14,7 @@ Login with valid credentials(login-saucelabs-app;login-with-valid-credentials)
 --------------------------------------------------------------------------------
 [Test worker] INFO net.thucydides.core.model.TestOutcome - SetUserStory Login saucelabs app
 [Test worker] INFO net.thucydides.core.model.TestOutcome - SetUserStory Login saucelabs app
-abr 04, 2023 12:52:03 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+abr 04, 2023 1:17:49 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFORMACIÓN: Detected dialect: OSS
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
