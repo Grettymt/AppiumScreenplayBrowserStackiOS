@@ -23,16 +23,17 @@ public class IOSDriver {
             caps.setCapability("browserstack.user", browserstackUser);
             caps.setCapability("browserstack.key", browserstackKey);
 
-            caps.setCapability("app", "");
+            caps.setCapability("app", "bs://35b11ca80f80a5eb78376ee07cdebd9db8bff1d6");
 
             caps.setCapability("device", "iPhone 13");
             caps.setCapability("os_version", "15");
 
-            caps.setCapability("project", "");
-            caps.setCapability("build", "");
-            caps.setCapability("name", "");
+            caps.setCapability("project", "IOSDemo");
+            caps.setCapability("build", "IOS SauceLab build 2");
+            caps.setCapability("name", "Login test IOS");
 
-            driver =  new io.appium.java_client.ios.IOSDriver<IOSElement>(new URL("http://hub-cloud.browserstack.com/wd/hub"), caps);
+            driver =  new io.appium.java_client.ios.IOSDriver<IOSElement>
+                    (new URL("http://hub-cloud.browserstack.com/wd/hub"), caps);
 
         }catch (MalformedURLException e){
             e.printStackTrace();

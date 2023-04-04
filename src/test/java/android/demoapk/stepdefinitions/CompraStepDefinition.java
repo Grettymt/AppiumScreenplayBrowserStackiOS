@@ -1,8 +1,7 @@
 package android.demoapk.stepdefinitions;
 
-
 import android.demoapk.driver.IOSDriver;
-import android.demoapk.questions.MensajeInicioSesion;
+import android.demoapk.questions.MensajeCompraExitosa;
 import android.demoapk.setup.SetUp;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,18 +10,21 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 
+import static android.demoapk.tasks.Comprar.comprar;
+import static android.demoapk.tasks.LlenarFormularioTarjeta.llenarFormularioTarjeta;
+import static android.demoapk.tasks.LlenarformularioCarrito.llenarformularioCarritopagar;
 import static android.demoapk.tasks.LogOut.logOut;
 import static android.demoapk.tasks.Login.login;
+import static android.demoapk.tasks.SeleccionarProducto.seleccionarProducto;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.Matchers.equalTo;
 
+public class CompraStepDefinition extends SetUp {
 
-public class LoginStepsDefinitions extends SetUp {
+    public static Logger LOGGER= Logger.getLogger(CompraStepDefinition.class);
 
-    public static Logger LOGGER= Logger.getLogger(LoginStepsDefinitions.class);
-
-    @Given("User wants to buy some clothes")
-    public void userWantsToBuySomeClothes() {
+    @Given("el usuario a iniciado sesion")
+    public void elUsuarioAIniciadoSesion() {
         try {
             actor.can(BrowseTheWeb.with(IOSDriver.configureDriver().start()));
             LOGGER.info("Automatizacion iniciada");
@@ -31,29 +33,35 @@ public class LoginStepsDefinitions extends SetUp {
             LOGGER.warn("Fallo en la automatizacion");
         }
     }
-    @When("User introduce the valid credentials {string} {string}")
-    public void userIntroduceTheValidCredentials(String userName, String password) {
+    @When("seleccione un producto y realize el pago")
+    public void seleccioneUnProductoYRealizeElPago() {
+        String userName = "bob@example.com";
+        String password = "10203040";
         try {
             actor.attemptsTo(
                     logOut(),
                     login()
                             .conElUser(userName)
-                            .yLaPassword(password)
+                            .yLaPassword(password),
+                    seleccionarProducto(),
+                    llenarformularioCarritopagar(),
+                    llenarFormularioTarjeta(),
+                    comprar()
             );
-            LOGGER.info("Sesion iniciada");
+            LOGGER.info("Producto comprado");
         } catch (Exception e){
             LOGGER.warn(e.getMessage());
-            LOGGER.warn("Fallo iniciando sesion");
+            LOGGER.warn("Fallo comprando el producto");
         }
     }
-    @Then("User should see the Products list")
-    public void userShouldSeeTheProductsList() {
+    @Then("vera un mensaje de compra exitosa")
+    public void veraUnMensajeDeCompraExitosa() {
         JavascriptExecutor jse = (JavascriptExecutor) IOSDriver.driver;
         try {
             actor.should(
-                    seeThat("Comparacion de titulos",
-                            MensajeInicioSesion.isEqualTo(),
-                            equalTo("Products"))
+                    seeThat("Comparacion de compra",
+                            MensajeCompraExitosa.isEqualTo(),
+                            equalTo("Checkout Complete"))
             );
             LOGGER.info("Asercion exitosa");
         }catch (Exception | Error e){

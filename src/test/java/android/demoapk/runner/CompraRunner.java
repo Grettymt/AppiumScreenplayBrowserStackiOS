@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         features = "src/test/resources/features",
         glue = "android.demoapk.stepdefinitions",
-        tags = "@Login"
+        tags = "@Compras"
 )
-public class LoginRunner {
+public class CompraRunner {
 }
