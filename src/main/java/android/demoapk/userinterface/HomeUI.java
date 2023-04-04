@@ -24,16 +24,10 @@ public class HomeUI {
     public static final Target MENSAJE_LOGIN = Target.the("Mensaje de login")
             .located(By.xpath("//XCUIElementTypeStaticText[@name='Products']"));
 
+    public static final Target OPCION_CARRITO = Target.the("Opcion de carrito")
+            .located(MobileBy.AccessibilityId("tab bar option cart"));
+
     /*
-    *
-    *
-    * Add To Cart button
-    *
-    *
-    * tab bar option cart
-    *
-    *
-    *
     * Proceed To Checkout button
     * */
 }
