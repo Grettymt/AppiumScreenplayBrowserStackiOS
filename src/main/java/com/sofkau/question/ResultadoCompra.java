@@ -10,7 +10,7 @@ public class ResultadoCompra {
 
     public static final Target MENSAJE_COMPRA = Target
             .the("MENSAJE DE LOGIN")
-            .located(MobileBy.xpath(""));
+            .located(MobileBy.AccessibilityId("THANK YOU FOR YOU ORDER"));
 
     public static Question<String> isEqualTo(String producto) {
         return TheTarget.textOf(MENSAJE_COMPRA);

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Iniciar sesion en la app swag y agregar productos al carrito" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-04T21:35:07" hostname="DESKTOP-BTHGFUF" time="86.141">
+<testsuite name="Iniciar sesion en la app swag y agregar productos al carrito" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-04T22:39:02" hostname="DESKTOP-BTHGFUF" time="74.258">
   <properties/>
-  <testcase name="comprar un producto" classname="Iniciar sesion en la app swag y agregar productos al carrito" time="86.141"/>
-  <system-out><![CDATA[2023-04-04 16:35:45 INFO  LoginStepsDefinitions:32 INICIA LA AUTOMATIZACION
-2023-04-04 16:36:31 INFO  LoginStepsDefinitions:49 INICIA LA AUTOMATIZACION
+  <testcase name="comprar un producto" classname="Iniciar sesion en la app swag y agregar productos al carrito" time="74.258"/>
+  <system-out><![CDATA[2023-04-04 17:39:39 INFO  LoginStepsDefinitions:36 INICIA LA AUTOMATIZACION
+2023-04-04 17:40:11 INFO  LoginStepsDefinitions:54 INICIA LA AUTOMATIZACION
+2023-04-04 17:40:15 INFO  LoginStepsDefinitions:68 CUMPLE
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jeiso/OneDrive/Escritorio/softka/semana%20Automatizacion/AppiumScreenplayBrowserStackiOS/src/test/resources/features/compraproducto.feature
 [Test worker] INFO  - 
@@ -16,7 +17,7 @@ comprar un producto(iniciar-sesion-en-la-app-swag-y-agregar-productos-al-carrito
 --------------------------------------------------------------------------------
 [Test worker] INFO net.thucydides.core.model.TestOutcome - SetUserStory Iniciar sesion en la app swag y agregar productos al carrito
 [Test worker] INFO net.thucydides.core.model.TestOutcome - SetUserStory Iniciar sesion en la app swag y agregar productos al carrito
-abr 04, 2023 4:35:24 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+abr 04, 2023 5:39:19 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFORMACIÓN: Detected dialect: OSS
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  

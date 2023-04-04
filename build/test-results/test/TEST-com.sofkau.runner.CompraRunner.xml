@@ -4,7 +4,7 @@
   <system-out><![CDATA[
 1 Scenarios (?[32m1 passed?[0m)
 3 Steps (?[32m3 passed?[0m)
-1m26,370s
+1m14,536s
 
 
 ]]></system-out>
@@ -26,8 +26,8 @@
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Iniciar sesion en la app swag y agregar productos al carrito
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@15ca7de: Generating report for test outcome: Iniciar sesion en la app swag y agregar productos al carrito:comprar un producto
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1050f2: Generating report for test outcome: Iniciar sesion en la app swag y agregar productos al carrito:comprar un producto
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@8c5fb3: Generating report for test outcome: Iniciar sesion en la app swag y agregar productos al carrito:comprar un producto
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@134153e: Generating report for test outcome: Iniciar sesion en la app swag y agregar productos al carrito:comprar un producto
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/jeiso/OneDrive/Escritorio/softka/semana%20Automatizacion/AppiumScreenplayBrowserStackiOS/src/test/resources/features/compraproducto.feature
 ]]></system-err>
 </testsuite>

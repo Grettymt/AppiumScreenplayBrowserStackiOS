@@ -1,6 +1,8 @@
 package com.sofkau.stepdefinitions;
 
 import com.sofkau.driver.IOSDriver;
+import com.sofkau.question.ResultadoCompra;
+import com.sofkau.question.ResultadoLogin;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -11,6 +13,8 @@ import org.apache.log4j.Logger;
 import static com.sofkau.tasks.DatosComprar.datosComprador;
 import static com.sofkau.tasks.InicioSesion.inicioSesion;
 import static com.sofkau.tasks.MenuProducto.menuProducto;
+import static com.sofkau.tasks.TerminarCompra.terminarCompra;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class ComprSD {
 
@@ -26,9 +30,7 @@ public class ComprSD {
             actor.can(BrowseTheWeb.with(IOSDriver.configureDriver().start()));
             actor.attemptsTo(
                     inicioSesion().conElUsuario(user).yconElPassword(password)
-
             );
-
             LOGGER.info("INICIA LA AUTOMATIZACION");
         } catch (Exception e) {
             LOGGER.info(" fallo la configuracion inicial");
@@ -42,8 +44,9 @@ public class ComprSD {
         try {
 
             actor.attemptsTo(
-                menuProducto(),
-                    datosComprador().conElUsuario("yeison").yconElApallido("ferney").yconElCodigo("45463")
+                    menuProducto(),
+                    datosComprador().conElUsuario("yeison").yconElApallido("ferney").yconElCodigo("45463"),
+                    terminarCompra()
             );
 
             LOGGER.info("INICIA LA AUTOMATIZACION");
@@ -56,6 +59,16 @@ public class ComprSD {
 
     @Then("User usuario debera ver un mensaje gracias por tu compra")
     public void userUsuarioDeberaVerUnMensajeGraciasPorTuCompra() {
+        try {
+            actor.should(
+                    seeThat(ResultadoCompra.isEqualTo("THANK YOU FOR YOU ORDER"))
+            );
+            LOGGER.info("CUMPLE");
+        } catch (Exception e) {
+            LOGGER.info(" fallo al momento de realizar la peticion");
+            LOGGER.warn(e.getMessage());
+
+        }
 
 
     }
