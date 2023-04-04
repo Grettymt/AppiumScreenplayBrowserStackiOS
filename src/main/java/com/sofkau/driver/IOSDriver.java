@@ -1,4 +1,4 @@
-package android.demoapk.driver;
+package com.sofkau.driver;
 
 import io.appium.java_client.ios.IOSElement;
 import io.github.cdimascio.dotenv.Dotenv;
@@ -23,14 +23,14 @@ public class IOSDriver {
             caps.setCapability("browserstack.user", browserstackUser);
             caps.setCapability("browserstack.key", browserstackKey);
 
-            caps.setCapability("app", "");
+            caps.setCapability("app", "bs://b97160a245822126b9a6bbd886ab42dee9e8b9ff");
 
             caps.setCapability("device", "iPhone 13");
             caps.setCapability("os_version", "15");
 
-            caps.setCapability("project", "");
-            caps.setCapability("build", "");
-            caps.setCapability("name", "");
+            caps.setCapability("project", "IOSDemo");
+            caps.setCapability("build", "IOS Saucelab build 2");
+            caps.setCapability("name", "Login test IOS");
 
             driver =  new io.appium.java_client.ios.IOSDriver<IOSElement>(new URL("http://hub-cloud.browserstack.com/wd/hub"), caps);
 

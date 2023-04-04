@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Login saucelabs app" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-04T20:03:37" hostname="DESKTOP-BTHGFUF" time="42.549">
+<testsuite name="com.sofkau.runner.LoginRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-BTHGFUF" time="0.0">
   <properties/>
-  <testcase name="Login with valid credentials" classname="Login saucelabs app" time="42.549">
-    <failure message="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+  <system-out><![CDATA[
+?[31mFailed scenarios:?[0m
+file:///C:/Users/jeiso/OneDrive/Escritorio/softka/semana%20Automatizacion/AppiumScreenplayBrowserStackiOS/src/test/resources/features/login.feature:4 # Login with valid credentials
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[32m1 passed?[0m)
+0m42,932s
+
+
+net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1190)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:990)
 	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:827)
@@ -43,7 +51,7 @@
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:242)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:187)
 	at com.sofkau.stepdefinitions.LoginStepsDefinitions.userIntroduceTheValidCredentials(LoginStepsDefinitions.java:25)
-	at ✽.User introduce the valid credentials &quot;standard_user&quot; &quot;secret_sauce&quot;(file:///C:/Users/jeiso/OneDrive/Escritorio/softka/semana%20Automatizacion/AppiumScreenplayBrowserStackiOS/src/test/resources/features/login.feature:6)
+	at ?.User introduce the valid credentials "standard_user" "secret_sauce"(file:///C:/Users/jeiso/OneDrive/Escritorio/softka/semana%20Automatizacion/AppiumScreenplayBrowserStackiOS/src/test/resources/features/login.feature:6)
 Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.AccessibilityId: test-Username to be enabled (tried for 5 second(s) with 100 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
@@ -152,7 +160,7 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-BTHGFUF', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: , browserstack.appium_version: 1.21.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, browserstack.minOSVersion: 12.0, buildName: IOS Saucelab build 2, bundleID: com.saucelabs.mydemoapp.rn, bundleId: com.saucelabs.mydemoapp.rn, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: , browserstack.appium_version: 1.21.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, browserstack.minOSVersion: 12.0, buildName: IOS Saucelab build 2, bundleID: com.saucelabs.mydemoapp.rn, bundleId: com.saucelabs.mydemoapp.rn, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: iphone, deviceName: iPhone 13, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 13-15.5}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 15, os_version: 15.0, platform: MAC, platformName: iOS, projectName: IOSDemo, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionId: c67ebe5cd32739e827b09eb9d81..., sessionName: Login test IOS, takesScreenshot: true, udid: 00008110-000C643914C0401E, uiautomator2ServerLaunchTimeout: 60000, useXctestrunFile: true, version: , waitForQuiescence: false, wdaStartupRetries: 3, wda_port: 8406, webStorageEnabled: false, webkitResponseTimeout: 20000}, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: iphone, deviceName: iPhone 13, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 13-15.5}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 15, os_version: 15.0, platform: MAC, platformName: iOS, projectName: IOSDemo, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionId: c67ebe5cd32739e827b09eb9d81..., sessionName: Login test IOS, takesScreenshot: true, udid: 00008110-000C643914C0401E, uiautomator2ServerLaunchTimeout: 60000, useXctestrunFile: true, version: , waitForQuiescence: false, wdaStartupRetries: 3, wda_port: 8406, webStorageEnabled: false, webkitResponseTimeout: 20000}
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: , browserstack.appium_version: 1.21.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, browserstack.minOSVersion: 12.0, buildName: IOS Saucelab build 2, bundleID: com.saucelabs.mydemoapp.rn, bundleId: com.saucelabs.mydemoapp.rn, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, automationName: XCUITest, bootstrapPath: /usr/local/.browserstack/co..., browserName: , browserstack.appium_version: 1.21.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, browserstack.minOSVersion: 12.0, buildName: IOS Saucelab build 2, bundleID: com.saucelabs.mydemoapp.rn, bundleId: com.saucelabs.mydemoapp.rn, custom_replay_kit_params: {"rotation":"false","captur..., databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: iphone, deviceName: iPhone 13, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 13-15.5}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 15, os_version: 15.0, platform: MAC, platformName: iOS, projectName: IOSDemo, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionId: c67ebe5cd32739e827b09eb9d81..., sessionName: Login test IOS, takesScreenshot: true, udid: 00008110-000C643914C0401E, uiautomator2ServerLaunchTimeout: 60000, useXctestrunFile: true, version: , waitForQuiescence: false, wdaStartupRetries: 3, wda_port: 8406, webStorageEnabled: false, webkitResponseTimeout: 20000}, custom_replay_kit_params: {"rotation":"false","captur..., databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: iphone, deviceName: iPhone 13, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 13-15.5}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, osVersion: 15, os_version: 15.0, platform: MAC, platformName: iOS, projectName: IOSDemo, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: http://mobile-internet-chec..., sessionId: c67ebe5cd32739e827b09eb9d81..., sessionName: Login test IOS, takesScreenshot: true, udid: 00008110-000C643914C0401E, uiautomator2ServerLaunchTimeout: 60000, useXctestrunFile: true, version: , waitForQuiescence: false, wdaStartupRetries: 3, wda_port: 8406, webStorageEnabled: false, webkitResponseTimeout: 20000}
 Session ID: c67ebe5cd32739e827b09eb9d81cccf7b09c577c
 *** Element info: {Using=accessibility id, value=test-Username}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -187,31 +195,32 @@ Session ID: c67ebe5cd32739e827b09eb9d81cccf7b09c577c
 	at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 99 more
-</failure>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
+
+
+]]></system-out>
   <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/jeiso/OneDrive/Escritorio/softka/semana%20Automatizacion/AppiumScreenplayBrowserStackiOS/src/test/resources/features/login.feature
 [Test worker] INFO  - 
-  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
- |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
-   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
-   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
 
-Login with valid credentials(login-saucelabs-app;login-with-valid-credentials)
---------------------------------------------------------------------------------
-[Test worker] INFO net.thucydides.core.model.TestOutcome - SetUserStory Login saucelabs app
-[Test worker] INFO net.thucydides.core.model.TestOutcome - SetUserStory Login saucelabs app
-abr 04, 2023 3:03:55 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
-INFORMACIÓN: Detected dialect: OSS
-[Test worker] ERROR  - 
-  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
- |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
-   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
 
-Login with valid credentials
------------------------------------------------------------------------
-[Test worker] ERROR  -     Test failed at step: User enters 'standard_user' into USER
-[Test worker] ERROR  -     Expected enabled element was not enabled
+[Test worker] INFO  - Test Suite Started: Login saucelabs app
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@1353651: Generating report for test outcome: Login saucelabs app:Login with valid credentials
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@11b1c2a: Generating report for test outcome: Login saucelabs app:Login with valid credentials
+log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/jeiso/OneDrive/Escritorio/softka/semana%20Automatizacion/AppiumScreenplayBrowserStackiOS/src/test/resources/features/login.feature
 ]]></system-err>
 </testsuite>
