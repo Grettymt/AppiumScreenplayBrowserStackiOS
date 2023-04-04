@@ -53,10 +53,11 @@ public class LoginStepsDefinitions {
                     seeThat(ValidarLogin.isEqualTo(), containsString(String.format("PRODUCTS")))
             );
             LOGGER.info("CUMPLE");
-        }catch (Exception exception){
+        } catch (Exception exception) {
             LOGGER.info("Error al realizar la comparacion");
             Assertions.fail(exception.getMessage(), exception);
             LOGGER.warn(exception.getMessage(), exception);
+
         }
     }
 
