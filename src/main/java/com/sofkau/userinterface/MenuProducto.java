@@ -20,25 +20,15 @@ public class MenuProducto {
 
 
 
-
-
-
-
-
     public static final Target SELECT_PRODUCTO = Target
             .the("USER")
             .located(MobileBy.xpath("(//XCUIElementTypeOther[@name=\"test-ADD TO CART\"])[2]"));
 
 
 
-
-
     public static final Target VER_CARRITO = Target
             .the("USER")
             .located(MobileBy.xpath("(//XCUIElementTypeOther[@name=\"1\"])[4]"));
-
-
-
 
 
     public static final Target BOTON_CHECKOUT = Target

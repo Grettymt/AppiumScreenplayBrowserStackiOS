@@ -2,7 +2,6 @@ package com.sofkau.stepdefinitions;
 
 import com.sofkau.driver.IOSDriver;
 import com.sofkau.question.ResultadoCompra;
-import com.sofkau.question.ResultadoLogin;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -16,7 +15,7 @@ import static com.sofkau.tasks.MenuProducto.menuProducto;
 import static com.sofkau.tasks.TerminarCompra.terminarCompra;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
-public class ComprSD {
+public class BuysSD {
 
 
     public static Logger LOGGER = Logger.getLogger(LoginStepsDefinitions.class);
