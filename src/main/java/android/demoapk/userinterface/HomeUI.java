@@ -26,8 +26,4 @@ public class HomeUI {
 
     public static final Target OPCION_CARRITO = Target.the("Opcion de carrito")
             .located(MobileBy.AccessibilityId("tab bar option cart"));
-
-    /*
-    * Proceed To Checkout button
-    * */
 }

@@ -23,7 +23,6 @@ public class LlenarformularioCarrito implements Task {
                 Hit.the(Keys.ENTER).into(CAMPO_PAIS),
                 Click.on(BTN_PAGAR)
         );
-
     }
     public static LlenarformularioCarrito llenarformularioCarritopagar(){
         return new LlenarformularioCarrito();
