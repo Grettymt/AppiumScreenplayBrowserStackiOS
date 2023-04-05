@@ -7,6 +7,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+
 public class IOSDriver {
     public static io.appium.java_client.ios.IOSDriver<IOSElement> driver;
 
@@ -23,14 +24,14 @@ public class IOSDriver {
             caps.setCapability("browserstack.user", browserstackUser);
             caps.setCapability("browserstack.key", browserstackKey);
 
-            caps.setCapability("app", "");
+            caps.setCapability("app", "bs://392f62cd21dab9600a5fa728fdcd942eeac83228");
 
-            caps.setCapability("device", "iPhone 13");
-            caps.setCapability("os_version", "15");
+            caps.setCapability("device", "iPhone 12 Pro");
+            caps.setCapability("os_version", "16.0");
 
-            caps.setCapability("project", "");
-            caps.setCapability("build", "");
-            caps.setCapability("name", "");
+            caps.setCapability("project", "IOSDemo");
+            caps.setCapability("build", "IOS SauceLab build 2");
+            caps.setCapability("name", "Test IOS");
 
             driver =  new io.appium.java_client.ios.IOSDriver<IOSElement>(new URL("http://hub-cloud.browserstack.com/wd/hub"), caps);
 
