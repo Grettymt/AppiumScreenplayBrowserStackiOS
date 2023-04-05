@@ -3,8 +3,10 @@ package android.demoapk.tasks;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static android.demoapk.userinterface.SeleccionarProductoUI.*;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
 
 public class CompraProductoTask implements Task {
 
@@ -23,6 +25,7 @@ public class CompraProductoTask implements Task {
 
 
     }
+
     public static CompraProductoTask compraProductoTask() {
         return new CompraProductoTask();
     }

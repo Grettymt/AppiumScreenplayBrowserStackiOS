@@ -16,6 +16,8 @@ public class DatosUsuarioUI {
             .located(By.id("Zip Code* input field"));
     public static final Target CAMPO_PAIS = Target.the("Ingresar pais cliente")
             .located(By.id("Country* input field"));
+    public static final Target BOTON_RETURN = Target.the("Boton return")
+            .located(By.id("Return"));
     public static final Target BOTON_IR_A_PAGOS = Target.the("Boton ir a pagos")
             .located(By.id("To Payment button"));
 }

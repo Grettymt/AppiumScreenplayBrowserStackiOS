@@ -2,27 +2,9 @@
 <testsuite name="android.demoapk.runner.PurchaseRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-CTLAMR7" time="0.0">
   <properties/>
   <system-out><![CDATA[
-?[33mUndefined scenarios:?[0m
-file:///C:/Users/usuario/Desktop/Appium%20Ios/AppiumScreenplayBrowserStackiOS/src/test/resources/features/compraproducto.feature:4 # Purchase a product
-
-1 Scenarios (?[33m1 undefined?[0m)
-3 Steps (?[36m1 skipped?[0m, ?[33m1 undefined?[0m, ?[32m1 passed?[0m)
-0m38,513s
-
-
-You can implement missing steps with the snippets below:
-
-@When("User selects the cheapest item to buy")
-public void userSelectsTheCheapestItemToBuy() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-@Then("User should see a oncfirmation message of the purchase")
-public void userShouldSeeAOncfirmationMessageOfThePurchase() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+1 Scenarios (?[32m1 passed?[0m)
+4 Steps (?[32m4 passed?[0m)
+4m6,033s
 
 
 ]]></system-out>
@@ -44,8 +26,8 @@ public void userShouldSeeAOncfirmationMessageOfThePurchase() {
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Purchase a product
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@11cddf3: Generating report for test outcome: Purchase a product:Purchase a product
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@aa375c: Generating report for test outcome: Purchase a product:Purchase a product
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@206e9c: Generating report for test outcome: Purchase a product:Purchase a product
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@1e21ccb: Generating report for test outcome: Purchase a product:Purchase a product
 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///C:/Users/usuario/Desktop/Appium%20Ios/AppiumScreenplayBrowserStackiOS/src/test/resources/features/compraproducto.feature
 ]]></system-err>
 </testsuite>

@@ -23,6 +23,7 @@ public class DatosTarjetaTask implements Task {
                 Enter.theValue(cliente.getExpiracionTarjeta()).into(CAMPO_FECHA_EXP_TARJETA),
                 Click.on(CAMPO_CODIGO_SEG_TARJETA),
                 Enter.theValue(cliente.getCodigoTarjeta()).into(CAMPO_CODIGO_SEG_TARJETA),
+                Click.on(TAP_NOMBRE),
                 Click.on(BOTON_ORDEN),
                 Click.on(BOTON_TERMINAR_ORDEN)
         );

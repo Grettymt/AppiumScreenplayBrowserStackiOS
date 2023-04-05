@@ -26,7 +26,7 @@ public class IOSDriver {
             caps.setCapability("browserstack.user", "");
             caps.setCapability("browserstack.key","");
 
-            caps.setCapability("app", "bs://90ecf4ee5d354af16022a85c14f196efd9ff5e64");
+            caps.setCapability("app", "");
 
             caps.setCapability("device", "iPhone 12 Pro");
             caps.setCapability("os_version", "16.0");

@@ -26,6 +26,7 @@ public class DatosClienteTask implements Task {
                 Enter.theValue(cliente.getCodigoPostal()).into(CAMPO_CODIGO_POSTAL),
                 Click.on(CAMPO_PAIS),
                 Enter.theValue(cliente.getPais()).into(CAMPO_PAIS),
+                Click.on(BOTON_RETURN),
                 Click.on(BOTON_IR_A_PAGOS)
         );
     }

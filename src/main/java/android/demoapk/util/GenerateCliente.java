@@ -16,8 +16,11 @@ public class GenerateCliente {
         cliente.setEstado(faker.address().state());
         cliente.setCodigoPostal(faker.address().zipCode());
         cliente.setPais(faker.address().country());
-        cliente.setNumeroTarjeta(faker.business().creditCardNumber());
-        cliente.setExpiracionTarjeta(faker.business().creditCardExpiry());
+        String [] numerostarjeta = {"4485908830181210","4539693741253664","4485398924859873"
+        ,"4532146913436721","4532293894442078","4532689007829178"};
+        cliente.setNumeroTarjeta(numerostarjeta[new Faker().random().nextInt(numerostarjeta.length)]);
+        String [] expiraciontarjeta={"08/27","04/29","10/29","06/24","12/29","10/24"};
+        cliente.setExpiracionTarjeta(expiraciontarjeta[new Faker().random().nextInt(expiraciontarjeta.length)]);
         cliente.setCodigoTarjeta(String.valueOf(faker.number().digits(3)));
         return cliente;
     }
