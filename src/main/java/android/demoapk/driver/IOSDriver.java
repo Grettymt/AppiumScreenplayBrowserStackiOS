@@ -23,14 +23,14 @@ public class IOSDriver {
             caps.setCapability("browserstack.user", browserstackUser);
             caps.setCapability("browserstack.key", browserstackKey);
 
-            caps.setCapability("app", "");
+            caps.setCapability("app", "bs://f961fa901b9db8d25cf6a68e2220228959a5c7e2");
 
             caps.setCapability("device", "iPhone 13");
             caps.setCapability("os_version", "15");
 
-            caps.setCapability("project", "");
-            caps.setCapability("build", "");
-            caps.setCapability("name", "");
+            caps.setCapability("project", "IOSDemo");
+            caps.setCapability("build", "IOS SauceLab build");
+            caps.setCapability("name", "Login test IOS");
 
             driver =  new io.appium.java_client.ios.IOSDriver<IOSElement>(new URL("http://hub-cloud.browserstack.com/wd/hub"), caps);
 
