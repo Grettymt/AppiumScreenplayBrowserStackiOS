@@ -23,7 +23,7 @@ public class IOSDriver {
             caps.setCapability("browserstack.user", browserstackUser);
             caps.setCapability("browserstack.key", browserstackKey);
 
-            caps.setCapability("app", "");
+            caps.setCapability("app", "bs://a27c15a84dfaebc70a6158f0408bd1f2bff866ec");
 
             caps.setCapability("device", "iPhone 13");
             caps.setCapability("os_version", "15");
