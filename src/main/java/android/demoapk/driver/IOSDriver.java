@@ -22,7 +22,7 @@ public class IOSDriver {
             DesiredCapabilities caps = new DesiredCapabilities();
 
             caps.setCapability("browserstack.user", browserstackUser);
-            caps.setCapability("browserstack.key",browserstackKey);
+            caps.setCapability("browserstack.key", browserstackKey);
 
             caps.setCapability("app", "bs://392f62cd21dab9600a5fa728fdcd942eeac83228");
 

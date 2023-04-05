@@ -9,5 +9,5 @@ public class LogoutUI {
     public static final Target BOTON_MENU_LOGOUT = Target.the("Boton menu log out")
             .located(By.id("menu item log out"));
     public static final Target BOTON_LOGOUT = Target.the("Boton log out")
-            .located(By.className("**/XCUIElementTypeButton[`label == \"Log Out\"`]"));
+            .located(By.xpath("//XCUIElementTypeButton[@name=\"Log Out\"]"));
 }
