@@ -1,7 +1,6 @@
 package android.demoapk.stepdefinitions;
 
 import android.demoapk.driver.IOSDriver;
-import android.demoapk.questions.CompraProductoQuestion;
 import android.demoapk.questions.LogoutQuestion;
 import android.demoapk.tasks.IngresoCredencialesTask;
 import io.cucumber.java.en.Given;

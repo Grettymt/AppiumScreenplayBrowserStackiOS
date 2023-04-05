@@ -7,7 +7,6 @@ import io.cucumber.java.en.*;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import org.assertj.core.api.Assertions;
-import org.openqa.selenium.JavascriptExecutor;
 
 import java.net.MalformedURLException;
 import java.util.logging.Logger;
