@@ -8,9 +8,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class IOSDriver {
-    public static io.appium.java_client.ios.IOSDriver<IOSElement> driver;
+    public static io.appium.java_client.ios.IOSDriver<IOSElement> DRIVER;
 
-    public static IOSDriver configureDriver() throws MalformedURLException {
+    public static IOSDriver configureDriver(){
 
         Dotenv dotenv = Dotenv.configure().load();
 
@@ -23,7 +23,7 @@ public class IOSDriver {
             caps.setCapability("browserstack.user", browserstackUser);
             caps.setCapability("browserstack.key", browserstackKey);
 
-            caps.setCapability("app", "");
+            caps.setCapability("app", "bs://56592204140531e881ed5b6a15a0044e6de15c2a");
 
             caps.setCapability("device", "iPhone 13");
             caps.setCapability("os_version", "15");
@@ -32,7 +32,7 @@ public class IOSDriver {
             caps.setCapability("build", "");
             caps.setCapability("name", "");
 
-            driver =  new io.appium.java_client.ios.IOSDriver<IOSElement>(new URL("http://hub-cloud.browserstack.com/wd/hub"), caps);
+            DRIVER =  new io.appium.java_client.ios.IOSDriver<IOSElement>(new URL("http://hub-cloud.browserstack.com/wd/hub"), caps);
 
         }catch (MalformedURLException e){
             e.printStackTrace();
@@ -41,7 +41,7 @@ public class IOSDriver {
     }
 
     public io.appium.java_client.ios.IOSDriver<IOSElement> start(){
-        return driver;
+        return DRIVER;
     }
 
 }
