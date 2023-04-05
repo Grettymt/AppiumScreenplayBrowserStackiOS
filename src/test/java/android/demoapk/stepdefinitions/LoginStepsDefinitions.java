@@ -55,6 +55,7 @@ public class LoginStepsDefinitions {
 
     }
 
+    //_____________________________________LOGIN_______________________________________________________________
     @Then("{actor} should see the {word} list")
     public void userShouldSeeTheProductsList(Actor actor,String expectedText) {
         try {
@@ -69,7 +70,7 @@ public class LoginStepsDefinitions {
         
     }
 
-//_____________________________________________________________________________________________
+//___________________________________________LOGOUT__________________________________________________
     @When("{actor} navega y presiona el boton logout")
     public void userNavegaYPresionaElBotonLogout(Actor actor){
         try {
@@ -95,7 +96,7 @@ public class LoginStepsDefinitions {
 
     }
 
-    //____________________________________________________________________________________________
+    //______________________________________COMPRA______________________________________________________
 
     @When("{actor} selecciona un {string} y la {int}")
     public void userSeleccionaUnYLa(Actor actor,String producto, Integer cantidad) {

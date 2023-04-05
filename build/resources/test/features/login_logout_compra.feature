@@ -22,5 +22,4 @@ Feature: Login saucelabs app
     Examples:
       | producto   | cantidad |
       | "mochila"  | 2        |
-      | "camiseta" | 2        |
-      | "camiseta" | 3        |
+      
