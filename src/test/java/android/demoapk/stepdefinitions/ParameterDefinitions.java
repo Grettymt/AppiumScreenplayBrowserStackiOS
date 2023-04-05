@@ -1,8 +1,6 @@
 package android.demoapk.stepdefinitions;
 
-import android.demoapk.questions.TextQuestion;
-import android.demoapk.tasks.LogOut;
-import android.demoapk.userinterface.HomeUI;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.ParameterType;
@@ -25,7 +23,7 @@ public class ParameterDefinitions {
     public void setTheStage(){
         OnStage.setTheStage(new OnlineCast());
     }
-
+/*
     @After
     public void logOut(){
 
@@ -39,5 +37,5 @@ public class ParameterDefinitions {
         );
 
     }
-
+*/
 }
