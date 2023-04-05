@@ -8,4 +8,4 @@ Feature: compra de productos
     And introduce the valid credentials bob@example.com 10203040
     When user selects the product
     And finishes the buying process
-    Then f
+    Then shows the checkout page
