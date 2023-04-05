@@ -8,6 +8,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import static net.thucydides.core.ThucydidesSystemProperty.BROWSERSTACK_USER;
+
 public class IOSDriver {
     public static io.appium.java_client.ios.IOSDriver<IOSElement> driver;
 
@@ -21,8 +23,8 @@ public class IOSDriver {
         try {
             DesiredCapabilities caps = new DesiredCapabilities();
 
-            caps.setCapability("browserstack.user", "cristhianmorenog_hlGAeI");
-            caps.setCapability("browserstack.key","hWrsHgyYs7x79zH6vsF2");
+            caps.setCapability("browserstack.user", "");
+            caps.setCapability("browserstack.key","");
 
             caps.setCapability("app", "bs://90ecf4ee5d354af16022a85c14f196efd9ff5e64");
 
