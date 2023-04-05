@@ -14,8 +14,8 @@ public class CredencialesLogin implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue("bob@example.com").into(CAMPO_USERNAME),
-                Enter.theValue("10203040").into(CAMPO_CONTRASENIA),
+                Enter.theValue(user).into(CAMPO_USERNAME),
+                Enter.theValue(contra).into(CAMPO_CONTRASENIA),
                 Click.on(BOTON_LOGIN)
         );
     }
