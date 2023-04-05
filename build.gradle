@@ -31,9 +31,13 @@ dependencies {
     implementation 'com.google.guava:guava:23.0'
     implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.0.80'
-    implementation group: 'io.appium', name: 'java-client', version: '7.5.1'
+    //implementation group: 'io.appium', name: 'java-client', version: '7.5.1'
     implementation 'io.github.cdimascio:dotenv-java:2.3.2'
 
+
+    implementation group: 'io.appium', name: 'java-client', version: '6.0.0'
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
 
 }
 test.finalizedBy(aggregate)
