@@ -1,15 +1,16 @@
 package com.sofkau.stepdefinitions;
 
 import com.sofkau.driver.IOSDriver;
+import com.sofkau.question.ResultLogout;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import org.apache.log4j.Logger;
-
 import static com.sofkau.tasks.InicioSesion.inicioSesion;
 import static com.sofkau.tasks.Logout.logout;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class LogoutSD {
 
@@ -26,7 +27,6 @@ public class LogoutSD {
             actor.attemptsTo(
                     inicioSesion().conElUsuario(user).yconElPassword(password)
             );
-
             LOGGER.info("INICIA LA AUTOMATIZACION");
         } catch (Exception e) {
             LOGGER.info(" fallo la configuracion inicial");
@@ -40,7 +40,6 @@ public class LogoutSD {
             actor.attemptsTo(
                     logout()
             );
-
             LOGGER.info("Realiza la peticion");
         } catch (Exception e) {
             LOGGER.info(" fallo al momento de realizar la peticion");
@@ -50,6 +49,17 @@ public class LogoutSD {
 
     @Then("User should be logged out and redirected to the Login page")
     public void userShouldBeLoggedOutAndRedirectedToTheLoginPage() {
+
+        try {
+            actor.should(
+                    seeThat(ResultLogout.isEqualTo("The currently accepted usernames for this application are (tap to autofill):"))
+            );
+            LOGGER.info("CUMPLE");
+        } catch (Exception e) {
+            LOGGER.info(" fallo al momento de realizar la peticion");
+            LOGGER.warn(e.getMessage());
+
+        }
 
     }
 

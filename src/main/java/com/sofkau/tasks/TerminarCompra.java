@@ -3,8 +3,6 @@ package com.sofkau.tasks;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
-
-import static com.sofkau.userinterface.MenuProducto.*;
 import static com.sofkau.userinterface.TerminarCompra.BOTON_TERMINAR;
 
 public class TerminarCompra implements Task {

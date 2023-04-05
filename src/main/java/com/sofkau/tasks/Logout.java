@@ -3,10 +3,8 @@ package com.sofkau.tasks;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
-
 import static com.sofkau.userinterface.Logout.BOTON_LOGOUT;
 import static com.sofkau.userinterface.Logout.BOTON_MENU;
-import static com.sofkau.userinterface.MenuProducto.*;
 
 public class Logout implements Task {
 

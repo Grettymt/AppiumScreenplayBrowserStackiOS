@@ -14,6 +14,7 @@ import static com.sofkau.tasks.InicioSesion.inicioSesion;
 import static com.sofkau.tasks.MenuProducto.menuProducto;
 import static com.sofkau.tasks.TerminarCompra.terminarCompra;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static org.hamcrest.CoreMatchers.containsString;
 
 public class BuysSD {
 
@@ -23,8 +24,8 @@ public class BuysSD {
     protected Actor actor = Actor.named("User");
 
 
-    @Given("User inicio sesion en app de swag {string} {string}")
-    public void userInicioSesionEnAppDeSwag(String user, String password) {
+    @Given("User is logged in to Swag app with valid credentials {string} {string}")
+    public void userIsLoggedInToSwagAppWithValidCredentials(String user, String password) {
         try {
             actor.can(BrowseTheWeb.with(IOSDriver.configureDriver().start()));
             actor.attemptsTo(
@@ -38,29 +39,28 @@ public class BuysSD {
 
     }
 
-    @When("User usuario agrega el producto al carrito y procede a comprarlo")
-    public void userUsuarioAgregaElProductoAlCarritoYProcedeAComprarlo() {
+    @When("User adds a product to the cart and completes their personal information {string} {string} {string} and proceeds to checkout")
+    public void userAddsAProductToTheCartAndCompletesTheirPersonalInformationAndProceedsToCheckout(String nombre, String apellido, String codigo) {
         try {
 
             actor.attemptsTo(
                     menuProducto(),
-                    datosComprador().conElUsuario("yeison").yconElApallido("ferney").yconElCodigo("45463"),
+                    datosComprador().conElUsuario(nombre).yconElApallido(apellido).yconElCodigo(codigo),
                     terminarCompra()
             );
-
-            LOGGER.info("INICIA LA AUTOMATIZACION");
+            LOGGER.info("Realiza la peticion");
         } catch (Exception e) {
-            LOGGER.info(" fallo la configuracion inicial");
+            LOGGER.info(" fallo la peticion");
             LOGGER.warn(e.getMessage());
         }
 
     }
 
-    @Then("User usuario debera ver un mensaje gracias por tu compra")
-    public void userUsuarioDeberaVerUnMensajeGraciasPorTuCompra() {
+    @Then("User should see a {string} message.")
+    public void userShouldSeeAMessage(String mensaje) {
         try {
             actor.should(
-                    seeThat(ResultadoCompra.isEqualTo("THANK YOU FOR YOU ORDER"))
+                    seeThat(ResultadoCompra.isEqualTo(), containsString((mensaje)))
             );
             LOGGER.info("CUMPLE");
         } catch (Exception e) {

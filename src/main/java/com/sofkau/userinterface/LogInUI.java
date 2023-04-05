@@ -6,7 +6,6 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class LogInUI {
 
-
     public static final Target CAMPO_USER = Target
             .the("USER")
             .located(MobileBy.AccessibilityId("test-Username"));

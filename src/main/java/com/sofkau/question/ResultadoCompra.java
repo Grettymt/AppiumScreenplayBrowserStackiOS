@@ -12,7 +12,7 @@ public class ResultadoCompra {
             .the("MENSAJE DE LOGIN")
             .located(MobileBy.AccessibilityId("THANK YOU FOR YOU ORDER"));
 
-    public static Question<String> isEqualTo(String producto) {
+    public static Question<String> isEqualTo() {
         return TheTarget.textOf(MENSAJE_COMPRA);
     }
 

@@ -7,13 +7,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/purchaseproduct.feature",
+        features = "src/test/resources/features",
         glue = "com.sofkau.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-public class CompraRunner {
 
 
-
-
+public class RunnerGeneral {
 }

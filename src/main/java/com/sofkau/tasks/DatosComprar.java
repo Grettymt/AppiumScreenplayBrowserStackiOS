@@ -4,9 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-
 import static com.sofkau.userinterface.DatosComprador.*;
-import static com.sofkau.userinterface.LogInUI.CAMPO_USER;
 
 public class DatosComprar implements Task {
 
