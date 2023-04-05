@@ -1,7 +1,7 @@
 package android.demoapk.stepdefinitions;
 
 import android.demoapk.driver.IOSDriver;
-import android.demoapk.question.ValidarCompra;
+import android.demoapk.question.ValidarLogout;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,19 +10,17 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import org.apache.log4j.Logger;
 import org.assertj.core.api.Assertions;
 
-import static android.demoapk.tasks.AddProductTask.addProductTask;
-import static android.demoapk.tasks.FormDatosTask.formDatosTask;
 import static android.demoapk.tasks.LoginTask.loginTask;
+import static android.demoapk.tasks.LogoutTask.logoutTask;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.Matchers.containsString;
 
-
-public class BuysStepsDefinitions {
-    public static Logger LOGGER = Logger.getLogger(BuysStepsDefinitions.class);
+public class LogoutStepsDefinitions {
+    public static Logger LOGGER = Logger.getLogger(LogoutStepsDefinitions.class);
     protected Actor actor = Actor.named("User");
 
-    @Given("User logged in with the valid credentials {string} {string}")
-    public void userLoggedInWithTheValidCredentials(String user, String password) {
+    @Given("User is logged in on the main page with valid credentials {string} {string}")
+    public void userIsLoggedInOnTheMainPageWithValidCredentials(String user, String password) {
         try {
             LOGGER.info("INICIA LA AUTOMATIZACION");
             actor.can(BrowseTheWeb.with(IOSDriver.configureDriver().start()));
@@ -40,45 +38,34 @@ public class BuysStepsDefinitions {
         }
     }
 
-    @When("User adds a product to the cart")
-    public void userAddsAProductToTheCart() {
+    @When("the user navigates to the logout button")
+    public void theUserNavigatesToTheLogoutButton() {
         try {
             actor.attemptsTo(
-                    addProductTask()
+                    logoutTask()
             );
         } catch (Exception exception) {
-            LOGGER.info(" fallo al agregar productos");
+            LOGGER.info(" fallo en el logout");
             Assertions.fail(exception.getMessage(), exception);
             LOGGER.warn(exception.getMessage(), exception);
+
         }
     }
 
-    @When("User enter all the shipping and billing information {string} {string} {string}")
-    public void userEnterAllTheShippingAndBillingInformation(String name, String lastName, String zipCode) {
-        try {
-            actor.attemptsTo(
-                    formDatosTask().conElName(name)
-                            .conElLastName(lastName)
-                            .conElZipCode(zipCode)
-            );
-        } catch (Exception exception) {
-            LOGGER.info(" fallo al ingresar información de envio y facturación");
-            Assertions.fail(exception.getMessage(), exception);
-            LOGGER.warn(exception.getMessage(), exception);
-        }
-    }
-
-    @Then("User should see a purchase confirmation message {string}")
-    public void userShouldSeeAPurchaseConfirmationMessage(String mensaje) {
+    @Then("the user will be redirected to the login page")
+    public void theUserWillBeRedirectedToTheLoginPage() {
         try {
             actor.should(
-                    seeThat(ValidarCompra.isEqualTo(), containsString(String.format(mensaje)))
+                    seeThat(ValidarLogout.isEqualTo(), containsString(String.format("Username")))
             );
             LOGGER.info("CUMPLE");
         } catch (Exception exception) {
             LOGGER.info("Error al realizar la comparacion");
             Assertions.fail(exception.getMessage(), exception);
             LOGGER.warn(exception.getMessage(), exception);
+
         }
     }
+
+
 }

@@ -20,5 +20,9 @@ public class FormDatosUI {
             .the("Botón continuar")
             .located(MobileBy.AccessibilityId("test-CONTINUE"));
 
+    public static final Target BTN_FINISH = Target
+            .the("Botón finish")
+            .located(MobileBy.AccessibilityId("FINISH"));
+
 
 }

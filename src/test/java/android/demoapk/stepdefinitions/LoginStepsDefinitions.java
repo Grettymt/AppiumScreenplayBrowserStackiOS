@@ -9,8 +9,6 @@ import org.apache.log4j.Logger;
 import org.assertj.core.api.Assertions;
 
 
-import java.net.MalformedURLException;
-
 import static android.demoapk.tasks.LoginTask.loginTask;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.Matchers.containsString;
@@ -20,7 +18,7 @@ public class LoginStepsDefinitions {
     protected Actor actor = Actor.named("User");
 
     @Given("User wants to buy some clothes")
-    public void userWantsToBuySomeClothes() throws MalformedURLException {
+    public void userWantsToBuySomeClothes() {
         try {
             LOGGER.info("INICIA LA AUTOMATIZACION");
             actor.can(BrowseTheWeb.with(IOSDriver.configureDriver().start()));

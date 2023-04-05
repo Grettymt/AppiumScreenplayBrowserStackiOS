@@ -35,7 +35,8 @@ public class FormDatosTask implements Task {
                 Enter.theValue(name).into(CAMPO_NOMBRE),
                 Enter.theValue(lastName).into(CAMPO_APELLIDO),
                 Enter.theValue(zipCode).into(CAMPO_ZIP_CODE),
-                Click.on(BTN_CONTINUE)
+                Click.on(BTN_CONTINUE),
+                Click.on(BTN_FINISH)
         );
     }
 
